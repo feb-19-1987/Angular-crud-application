@@ -14,6 +14,7 @@ export class EmployeeComponent implements OnInit {
   empObj: any = new Employee()
   
   empData: Employee[] = []
+  
   constructor(private fb: FormBuilder, private employeeService: EmployeeService, private http: HttpClient) { }
 
   ngOnInit(): void {
@@ -21,6 +22,7 @@ export class EmployeeComponent implements OnInit {
     this.loademployees()
     this.reset()
   }
+
   empForm = this.fb.group({
     _id: [''],
     name: [''],

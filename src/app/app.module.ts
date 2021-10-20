@@ -13,7 +13,7 @@ import { EmployeeComponent } from './employee/employee.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,ReactiveFormsModule 
+    AppRoutingModule,ReactiveFormsModule,HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
